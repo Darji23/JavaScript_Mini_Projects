@@ -1,0 +1,68 @@
+body,p{
+    margin:0;
+    padding:0;
+}
+
+body{
+    padding:100px;
+    background: grey;
+}
+
+#content{
+    margin: 100px auto 20px auto;
+    border:10px solid black;
+    width:400px;
+    height:266px;
+    position:relative;
+}
+
+#content img{
+    position: absolute;
+    left: 0;
+    top:0;
+}
+
+p{
+    text-align:center;
+}
+
+/**************Link Styles************/
+
+#Links{
+    width:420px;
+    display:flex;
+    margin:auto;
+
+}
+
+#Links a{
+    display:block;
+    flex:1;
+    background: orangered;
+    height:50px;
+    line-height:50px;
+    color:white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#Links a:hover{
+    background: white;
+    color:aliceblue;
+}
+
+/**********Animation Style********/
+
+.fadeinimg{
+    animation: fadein 2s;
+}
+@keyframes fadein{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}

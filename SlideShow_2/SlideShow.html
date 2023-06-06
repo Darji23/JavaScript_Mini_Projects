@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>SlideShow</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="content">
+            <img src="image1.jpg" alt="SlideShow image" id="myimage">
+        </div>
+        <p id="Links"><a href="#" id="previous"></a><a href="#" id="next"></a></p>
+
+        <script>
+            var currentImage=0;
+            var myPhotos=["image1.jpg","image2.jpg","image3.jpg","image4.jpg","image5.jpg"];
+            var container = document.getElementById('content');
+            var nextBtn=document.getElementById('next');
+            var prevBtn=document.getElementById('previous');
+
+            nextBtn.addEventListener('click',function(event){
+                event.preventDefault();
+                currentImage++;
+                if(currentImage>(myPhotos.length-1)){currentImage=0;}
+            });
+        </script>
+    </body>
+</html>
